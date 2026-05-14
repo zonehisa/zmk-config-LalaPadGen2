@@ -154,6 +154,7 @@
         track-remainders;
     };
 
+
     zip_scroll_scaler_smooth: zip_scroll_scaler_smooth {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
