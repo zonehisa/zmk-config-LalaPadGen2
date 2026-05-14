@@ -22,7 +22,7 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
-    - name: zmk-input-processor-inertia
+    - name: zmk-input-inertia
       remote: amgskobo
       revision: main
   self:
