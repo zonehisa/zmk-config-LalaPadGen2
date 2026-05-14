@@ -163,12 +163,27 @@
         track-remainders;
     };
 
+    zip_inertia: zip_inertia {
+        compatible = "zmk,input-processor-inertia";
+        #input-processor-cells = <0>;
+        move-decay-factor-int = <90>;
+        move-report-interval-ms = <35>;
+        move-threshold-start = <15>;
+        move-threshold-stop = <1>;
+        scroll-decay-factor-int = <85>;
+        scroll-report-interval-ms = <65>;
+        scroll-threshold-start = <2>;
+        scroll-threshold-stop = <0>;
+        trigger-ms = <35>;
+    };
+
     trackpad_listener_R: trackpad_listener_R {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad_split_R>;
         input-processors = <&trackpad_key_behaviors_R>,
                            <&zip_xy_scaler 1 1>,
+                           <&zip_inertia>,
                            <&zip_scroll_scaler_smooth 1 400>,
                            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                            <&zip_dynamic_xy_scaler>;
@@ -187,6 +202,7 @@
         device = <&trackpad_split_L>;
         input-processors = <&trackpad_key_behaviors_L>,
                            <&zip_xy_scaler 1 1>,
+                           <&zip_inertia>,
                            <&zip_scroll_scaler_smooth 1 400>,
                            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
                            <&zip_dynamic_xy_scaler>;
