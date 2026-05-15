@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/zip_dynamic_scale.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
-#include <scroll-snap.dtsi>
 #include "lalapadgen2-layouts.dtsi"
 
 #define POS_TP_LCLK_L  52
@@ -172,7 +171,6 @@
         input-processors = <&trackpad_key_behaviors_R>,
                            <&zip_xy_scaler 1 2>,
                            <&zip_scroll_scaler_smooth 1 400>,
-                           <&zip_scroll_snap>,
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                            <&zip_dynamic_xy_scaler>;
         lowspeedmode {
@@ -191,7 +189,6 @@
         input-processors = <&trackpad_key_behaviors_L>,
                            <&zip_xy_scaler 1 2>,
                            <&zip_scroll_scaler_smooth 1 400>,
-                           <&zip_scroll_snap>,
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                            <&zip_dynamic_xy_scaler>;
         lowspeedmode {
