@@ -192,7 +192,7 @@
             &ng Q  &ng W  &ng E  &ng R  &ng T  &ng Y  &ng U  &ng I  &ng O  &ng P
             &ng A  &ng S  &ng D  &ng F  &ng G  &ng H  &ng J  &ng K  &ng L  &ng SEMI
             &ng Z  &ng X  &ng C  &ng V  &ng B  &ng N  &ng M  &ng COMMA  &ng DOT  &ng SLASH
-            &mt LCTRL ESC  &mo FUNCTION_LAYER  &kp LSHIFT  &ng SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &ng ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
+            &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog DEFAULT_LAYER
