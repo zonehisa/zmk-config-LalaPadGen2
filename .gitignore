@@ -1,5 +1,7 @@
 # ZMK / Zephyr
 build/
+zmk/
+zmk-*/
 .west/
 zephyr/
 modules/
