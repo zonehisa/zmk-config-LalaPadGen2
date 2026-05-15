@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <naginata.dtsi>
+#include <behaviors/naginata.dtsi>
 
 #define DEFAULT_LAYER   0
 #define OONISHI_LAYER   1
@@ -50,6 +50,23 @@
         };
     };
 
+    macros {
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_1 &kp INTERNATIONAL_4 &to NAGINATA_LAYER>
+                ;
+        };
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to DEFAULT_LAYER>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -60,6 +77,18 @@
         COMBO_TAB {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+        };
+        combo_ng_on {
+            timeout-ms = <300>;
+            key-positions = <15 16>;
+            bindings = <&ng_on>;
+            layers = <DEFAULT_LAYER OONISHI_LAYER>;
+        };
+        combo_ng_off {
+            timeout-ms = <300>;
+            key-positions = <13 14>;
+            bindings = <&ng_off>;
+            layers = <DEFAULT_LAYER OONISHI_LAYER NAGINATA_LAYER>;
         };
     };
 
@@ -160,10 +189,10 @@
         NAGINATA_LAYER {
             display-name = "Naginata";
             bindings = <
-            &ngn Q  &ngn W  &ngn E  &ngn R  &ngn T  &ngn Y  &ngn U  &ngn I  &ngn O  &ngn P
-            &ngn A  &ngn S  &ngn D  &ngn F  &ngn G  &ngn H  &ngn J  &ngn K  &ngn L  &ngn SEMI
-            &ngn Z  &ngn X  &ngn C  &ngn V  &ngn B  &ngn N  &ngn M  &ngn COMMA  &ngn DOT  &ngn SLASH
-            &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
+            &ng Q  &ng W  &ng E  &ng R  &ng T  &ng Y  &ng U  &ng I  &ng O  &ng P
+            &ng A  &ng S  &ng D  &ng F  &ng G  &ng H  &ng J  &ng K  &ng L  &ng SEMI
+            &ng Z  &ng X  &ng C  &ng V  &ng B  &ng N  &ng M  &ng COMMA  &ng DOT  &ng SLASH
+            &mt LCTRL ESC  &mo FUNCTION_LAYER  &kp LSHIFT  &ng SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &ng ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog DEFAULT_LAYER
