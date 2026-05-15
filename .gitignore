@@ -1,0 +1,31 @@
+# ZMK / Zephyr
+build/
+.west/
+zephyr/
+modules/
+tools/
+bootloader/
+
+# Nix / Direnv
+.direnv/
+result
+result-*
+.envrc.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
