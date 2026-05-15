@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/ShiniNet/
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: eswai
+      url-base: https://github.com/eswai
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -20,5 +22,8 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
+    - name: zmk-naginata
+      remote: eswai
+      revision: main
   self:
     path: config

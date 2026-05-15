@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <naginata.dtsi>
 
 #define DEFAULT_LAYER   0
 #define OONISHI_LAYER   1
@@ -13,6 +14,7 @@
 #define SYSTEM_LAYER    4
 #define FUNCTION_LAYER  5
 #define NUM_LAYER       6
+#define NAGINATA_LAYER  7
 
 &mt { quick-tap-ms = <200>; };
 
@@ -73,7 +75,7 @@
             &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
-            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL
+            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog OONISHI_LAYER
             >;
         };
 
@@ -86,7 +88,7 @@
             &kp LCTRL  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &lt NUM_LAYER ESC  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
-            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog OONISHI_LAYER
+            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog NAGINATA_LAYER
             >;
         };
 
@@ -121,7 +123,7 @@
             bindings = <
             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
             &sys_reset  &bootloader  &kp F8  &kp F9  &kp F10  &sys_reset  &bootloader  &bt BT_CLR  &bt BT_CLR_ALL  &trans
-            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &tog OONISHI_LAYER
+            &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &tog NAGINATA_LAYER
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
@@ -152,6 +154,19 @@
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        NAGINATA_LAYER {
+            display-name = "Naginata";
+            bindings = <
+            &ngn Q  &ngn W  &ngn E  &ngn R  &ngn T  &ngn Y  &ngn U  &ngn I  &ngn O  &ngn P
+            &ngn A  &ngn S  &ngn D  &ngn F  &ngn G  &ngn H  &ngn J  &ngn K  &ngn L  &ngn SEMI
+            &ngn Z  &ngn X  &ngn C  &ngn V  &ngn B  &ngn N  &ngn M  &ngn COMMA  &ngn DOT  &ngn SLASH
+            &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
+            &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+            &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog DEFAULT_LAYER
             >;
         };
     };
