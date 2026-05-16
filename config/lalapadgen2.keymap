@@ -65,6 +65,13 @@
                 = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to DEFAULT_LAYER>
                 ;
         };
+        on_on: on_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_2 &to OONISHI_LAYER>
+                ;
+        };
     };
 
     combos {
@@ -90,6 +97,12 @@
             key-positions = <13 14>;
             layers = <DEFAULT_LAYER OONISHI_LAYER NAGINATA_LAYER>;
         };
+        combo_on_on {
+            timeout-ms = <300>;
+            key-positions = <16 17>;
+            bindings = <&on_on>;
+            layers = <DEFAULT_LAYER>;
+        };
     };
 
     keymap {
@@ -104,7 +117,7 @@
             &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
-            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog OONISHI_LAYER
+            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &none
             >;
         };
 
@@ -117,7 +130,7 @@
             &kp LCTRL  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &lt NUM_LAYER ESC  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
-            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &tog OONISHI_LAYER
+            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &ng_off
             >;
         };
 
