@@ -9,12 +9,12 @@
 
 #define DEFAULT_LAYER   0
 #define OONISHI_LAYER   1
-#define SECONDARY_LAYER 2
-#define TERTIARY_LAYER  3
-#define SYSTEM_LAYER    4
-#define FUNCTION_LAYER  5
-#define NUM_LAYER       6
-#define NAGINATA_LAYER  7
+#define NAGINATA_LAYER  2
+#define SECONDARY_LAYER 3
+#define TERTIARY_LAYER  4
+#define SYSTEM_LAYER    5
+#define FUNCTION_LAYER  6
+#define NUM_LAYER       7
 
 &mt { quick-tap-ms = <200>; };
 
@@ -121,6 +121,19 @@
             >;
         };
 
+        NAGINATA_LAYER {
+            display-name = "Naginata";
+            bindings = <
+            &ng Q  &ng W  &ng E  &ng R  &ng T  &ng Y  &ng U  &ng I  &ng O  &ng P
+            &ng A  &ng S  &ng D  &ng F  &ng G  &ng H  &ng J  &ng K  &ng L  &ng SEMI
+            &ng Z  &ng X  &ng C  &ng V  &ng B  &ng N  &ng M  &ng COMMA  &ng DOT  &ng SLASH
+            &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &ng SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &ng ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
+            &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+            &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &ng_off
+            >;
+        };
+
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
@@ -183,19 +196,6 @@
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        NAGINATA_LAYER {
-            display-name = "Naginata";
-            bindings = <
-            &ng Q  &ng W  &ng E  &ng R  &ng T  &ng Y  &ng U  &ng I  &ng O  &ng P
-            &ng A  &ng S  &ng D  &ng F  &ng G  &ng H  &ng J  &ng K  &ng L  &ng SEMI
-            &ng Z  &ng X  &ng C  &ng V  &ng B  &ng N  &ng M  &ng COMMA  &ng DOT  &ng SLASH
-            &mt LCTRL ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &ng SPACE  &mo NUM_LAYER  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &ng ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &mt RCTRL BACKSLASH
-            &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
-            &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
-            &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &ng_off
             >;
         };
     };
