@@ -134,7 +134,7 @@
         OONISHI_LAYER {
             display-name = "Oonishi";
             bindings = <
-            &kp Q  &kp L  &kp U  &kp DOT  &kp COMMA  &kp F  &kp W  &kp R  &kp Y  &mt2 SLASH P
+            &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &mt2 SLASH P
             &mt2 LEFT_GUI E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &mt2 LEFT_GUI H
             &mt2 LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp SEMI  &kp G  &kp D  &kp M  &kp J  &mt LEFT_SHIFT B
             &kp LCTRL  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &lt NUM_LAYER ESC  &mt LEFT_SHIFT TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &off_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
