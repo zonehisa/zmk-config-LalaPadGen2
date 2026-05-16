@@ -174,7 +174,7 @@
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                            <&zip_dynamic_xy_scaler>;
         lowspeedmode {
-            layers = <1>,<2>;
+            layers = <3>,<4>;
             input-processors =  <&trackpad_key_behaviors_R>,
                                 <&zip_xy_scaler 1 8>,
                                 <&zip_scroll_scaler_smooth 1 150>,
@@ -192,7 +192,7 @@
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
                            <&zip_dynamic_xy_scaler>;
         lowspeedmode {
-            layers = <1>,<2>;
+            layers = <3>,<4>;
             input-processors =  <&trackpad_key_behaviors_L>,
                                 <&zip_xy_scaler 1 8>,
                                 <&zip_scroll_scaler_smooth 1 150>,
