@@ -160,8 +160,8 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &none  &kp BACKSPACE  &kp DELETE  &kp GRAVE  &kp MINUS
-            &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER
+            &trans  &trans  &trans  &trans  &trans  &none  &kp BACKSPACE  &kp DELETE  &kp GRAVE  &kp MINUS
+            &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER
             &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &mt LEFT_ALT END  &kp LEFT_SHIFT
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DEL  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -212,10 +212,10 @@
         NUM_LAYER {
             display-name = "num_layer";
             bindings = <
-            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
-            &trans  &trans  &trans  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS  &kp KP_ASTERISK
-            &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
-            &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_ENTER
+            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
+            &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS  &kp KP_ASTERISK
+            &trans  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_ENTER
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
