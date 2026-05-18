@@ -214,7 +214,7 @@
             bindings = <
             &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
             &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS  &kp KP_ASTERISK
-            &trans  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
+            &kp LS(LG(SPACE))  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_ENTER
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
