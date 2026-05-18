@@ -124,7 +124,7 @@
             &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P
             &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt2 LEFT_GUI SEMI
             &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &mt LEFT_ALT PERIOD  &mt LEFT_SHIFT SLASH
-            &mt LEFT_SHIFT ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LCTRL TAB  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &on_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
+            &mt LEFT_SHIFT ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LCTRL TAB  &mt RGUI BACKSPACE  &lt TERTIARY_LAYER SPACE  &mt RALT ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &on_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &none
@@ -137,7 +137,7 @@
             &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &mt2 SLASH P
             &kp E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &kp H
             &kp Z  &kp X  &kp C  &kp V  &kp SEMI  &kp G  &kp D  &kp M  &kp J  &kp B
-            &trans  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &lt NUM_LAYER ESC  &trans  &mt RGUI BACKSPACE  &mt RALT ENTER  &lt TERTIARY_LAYER SPACE  &lt TERTIARY_LAYER LANGUAGE_1  &off_lt 0 LA(GRAVE)  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &off_lt 0 LA(GRAVE)  &trans
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &ng_off
@@ -150,7 +150,7 @@
             &ng Q  &ng W  &ng E  &ng R  &ng T  &ng Y  &ng U  &ng I  &ng O  &ng P
             &ng A  &ng S  &ng D  &ng F  &ng G  &ng H  &ng J  &ng K  &ng L  &ng SEMI
             &ng Z  &ng X  &ng C  &ng V  &ng B  &ng N  &ng M  &ng COMMA  &ng DOT  &ng SLASH
-            &trans  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &ng SPACE  &mo NUM_LAYER  &trans  &mt RGUI BACKSPACE  &lt TERTIARY_LAYER SPACE  &ng ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &kp LA(GRAVE)  &trans
+            &trans  &trans  &trans  &ng SPACE  &trans  &trans  &trans  &trans  &ng ENTER  &trans  &kp LA(GRAVE)  &trans
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &ng_off
