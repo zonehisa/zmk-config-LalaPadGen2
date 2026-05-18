@@ -173,9 +173,9 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-            &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT  &trans  &trans  &trans  &trans
+            &kp SQT  &trans  &trans  &kp GRAVE  &kp LBKT  &kp RBKT  &kp DQT  &trans  &trans  &kp PRCNT
             &kp EQUAL  &trans  &kp AT  &trans  &kp LBRC  &kp RBRC  &trans  &kp AMPS  &kp STAR  &kp HASH
-            &trans  &kp EXCL  &trans  &trans  &kp LPAR  &kp RPAR  &kp DLLR  &trans  &trans  &trans
+            &trans  &kp EXCL  &kp CARET  &trans  &kp LPAR  &kp RPAR  &kp DLLR  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &mkp MB5  &trans  &mkp MB4  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
