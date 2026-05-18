@@ -199,8 +199,8 @@
         FUNCTION_LAYER {
             display-name = "function_layer";
             bindings = <
-            &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-            &kp LG(A)  &kp LG(S)  &trans  &kp LG(F)  &trans  &trans  &trans  &trans  &trans  &trans
+            &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp LG(F)  &kp F7  &kp F8  &kp F9  &kp F10
+            &trans  &trans  &kp LG(A)  &trans  &trans  &trans  &trans  &trans  &kp LG(S)  &trans
             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &kp C_BRI_DN  &trans  &kp C_BRI_UP  &kp C_VOL_UP  &trans  &kp C_VOL_DN  &kp C_MUTE  &trans
