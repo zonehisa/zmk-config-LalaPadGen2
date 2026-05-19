@@ -119,7 +119,7 @@
             timeout-ms = <300>;
             bindings = <&ng_on>;
             key-positions = <15 16>;
-            layers = <DEFAULT_LAYER>;
+            layers = <DEFAULT_LAYER OONISHI_LAYER>;
         };
         combo_ng_off {
             timeout-ms = <300>;
