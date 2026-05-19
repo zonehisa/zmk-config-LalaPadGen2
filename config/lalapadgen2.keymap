@@ -81,6 +81,13 @@
                 = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to DEFAULT_LAYER>
                 ;
         };
+        ng_off_to_oonishi: ng_off_to_oonishi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LANGUAGE_2 &kp INTERNATIONAL_5 &to OONISHI_LAYER>
+                ;
+        };
         select_current_line: select_current_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -116,7 +123,7 @@
         };
         combo_ng_off {
             timeout-ms = <300>;
-            bindings = <&ng_off>;
+            bindings = <&ng_off_to_oonishi>;
             key-positions = <13 14>;
             layers = <DEFAULT_LAYER OONISHI_LAYER NAGINATA_LAYER>;
         };
