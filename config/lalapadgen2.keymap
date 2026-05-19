@@ -131,7 +131,7 @@
             &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P
             &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt2 LEFT_GUI SEMI
             &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &mt LEFT_ALT PERIOD  &mt LEFT_SHIFT SLASH
-            &mt LEFT_SHIFT ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LCTRL TAB  &mt RGUI BACKSPACE  &lt TERTIARY_LAYER SPACE  &mt RALT ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &on_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
+            &mt LEFT_SHIFT ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LCTRL TAB  &mt LGUI BACKSPACE  &lt TERTIARY_LAYER SPACE  &mt RALT ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &on_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &none
@@ -170,7 +170,7 @@
             &trans  &trans  &trans  &trans  &trans  &select_current_line  &kp BACKSPACE  &kp DELETE  &kp GRAVE  &kp MINUS
             &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER
             &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &mt LEFT_ALT END  &kp LEFT_SHIFT
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DEL  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
             &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans  &trans  &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans  &trans  &trans
@@ -181,7 +181,7 @@
             display-name = "tertiary_layer";
             bindings = <
             &kp SQT  &trans  &kp TILDE  &kp GRAVE  &kp LBKT  &kp RBKT  &kp DQT  &trans  &trans  &kp PRCNT
-            &kp EQUAL  &kp PLUS  &kp AT  &trans  &kp LBRC  &kp RBRC  &trans  &kp AMPS  &kp STAR  &kp HASH
+            &kp EQUAL  &kp PLUS  &kp AT  &trans  &kp LBRC  &kp RBRC  &kp TILDE  &kp AMPS  &kp STAR  &kp HASH
             &trans  &kp EXCL  &kp CARET  &trans  &kp LPAR  &kp RPAR  &kp DLLR  &trans  &kp KP_DIVIDE  &kp QMARK
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &mkp MB5  &trans  &mkp MB4  &trans  &trans  &trans  &trans  &trans  &trans
@@ -219,9 +219,9 @@
         NUM_LAYER {
             display-name = "num_layer";
             bindings = <
-            &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
+            &kp LG(N1)  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
             &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS  &kp KP_ASTERISK
-            &trans  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
+            &kp LC(E)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_ENTER
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
