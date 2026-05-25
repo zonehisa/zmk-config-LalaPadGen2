@@ -22,7 +22,7 @@
 #define POS_TP_RIGHT_R 64
 #define POS_TP_UP_R    65
 #define POS_TP_DOWN_R  66
-#define POS_TP_PINCH_R 67
+#define POS_TP_PINCH_R POS_TP_PINCH_L
 
 / {
     chosen {
