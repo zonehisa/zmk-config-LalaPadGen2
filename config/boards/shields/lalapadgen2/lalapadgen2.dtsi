@@ -22,7 +22,7 @@
 #define POS_TP_RIGHT_R 64
 #define POS_TP_UP_R    65
 #define POS_TP_DOWN_R  66
-#define POS_TP_PINCH_R POS_TP_PINCH_L
+#define POS_TP_PINCH_R 67
 
 / {
     chosen {
@@ -107,7 +107,7 @@
                     &tp_to_pos  POS_TP_RIGHT_R
                     &tp_to_pos  POS_TP_UP_R
                     &tp_to_pos  POS_TP_DOWN_R
-                    &tp_to_pos  POS_TP_PINCH_R
+                    &kp LGUI
                     >;
     };
     trackpad_key_behaviors_L: trackpad_key_behaviors_L {
@@ -132,7 +132,7 @@
                     &tp_to_pos  POS_TP_RIGHT_L
                     &tp_to_pos  POS_TP_UP_L
                     &tp_to_pos  POS_TP_DOWN_L
-                    &tp_to_pos  POS_TP_PINCH_L
+                    &kp LGUI
                     >;
     };
     
