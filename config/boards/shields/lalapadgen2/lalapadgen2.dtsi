@@ -141,7 +141,7 @@
         #input-processor-cells = <0>;
         trigger-code = <INPUT_BTN_7>;
         wheel-code = <INPUT_REL_WHEEL>;
-        bindings = <&kp LG(PLUS)>, <&kp LG(MINUS)>;
+        bindings = <&kp LG(EQUAL)>, <&kp LG(MINUS)>;
     };
     
     zip_dynamic_xy_scaler: zip_dynamic_xy_scaler {
