@@ -16,8 +16,8 @@ manifest:
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-driver-iqs9151
-      remote: zonehisa
-      revision: feature/pinch-zoom-keys
+      remote: ShiniNet
+      revision: main
     - name: zmk-easy-charge-indicator
       remote: ShiniNet
       revision: main
