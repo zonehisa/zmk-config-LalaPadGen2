@@ -242,10 +242,10 @@
         NUM_LAYER {
             display-name = "num_layer";
             bindings = <
-            &kp LC(Z)  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_DIVIDE
-            &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS  &kp KP_ASTERISK
-            &kp LC(E)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp KP_EQUAL
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_ENTER  &kp KP_ENTER
+            &kp LC(Z)  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp SLASH
+            &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp N4  &kp N5  &kp N6  &kp PLUS  &kp STAR
+            &kp LC(E)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp N1  &kp N2  &kp N3  &kp COMMA  &kp EQUAL
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &kp DOT  &kp ENTER  &kp ENTER
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
