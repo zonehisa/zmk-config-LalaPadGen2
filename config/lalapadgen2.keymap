@@ -244,7 +244,7 @@
             bindings = <
             &kp LC(Z)  &kp LS(LG(N4))  &kp LS(LG(N5))  &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp SLASH
             &kp LC(M)  &kp LC(COMMA)  &kp LC(DOT)  &kp LC(SLASH)  &kp LC(N)  &kp N4  &kp N5  &kp N6  &kp PLUS  &kp STAR
-            &kp LC(E)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp N1  &kp N2  &kp N3  &kp COMMA  &kp EQUAL
+            &kp LC(F)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &kp N1  &kp N2  &kp N3  &kp COMMA  &kp EQUAL
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &kp DOT  &kp ENTER  &kp ENTER
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans
