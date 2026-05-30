@@ -201,7 +201,7 @@
             display-name = "secondary_layer";
             bindings = <
             &trans  &trans  &trans  &trans  &trans  &select_current_line  &kp BACKSPACE  &kp DELETE  &kp GRAVE  &kp MINUS
-            &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER
+            &trans  &trans  &trans  &kp LS(LG(SPACE))  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER
             &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &mt LEFT_ALT END  &kp LEFT_SHIFT
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
