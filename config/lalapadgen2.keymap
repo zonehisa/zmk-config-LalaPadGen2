@@ -176,7 +176,7 @@
             bindings = <
             &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P
             &kp E  &kp I  &kp A  &kp O  &mt LEFT_SHIFT MINUS  &kp K  &kp T  &kp N  &kp S  &kp H
-            &kp Z  &kp X  &kp C  &kp V  &kp SEMI  &kp G  &kp D  &kp M  &kp J  &kp B
+            &trans  &kp X  &kp C  &kp V  &kp SEMI  &kp G  &kp D  &kp M  &kp J  &kp B
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &off_lt 0 LA(GRAVE)  &trans
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
