@@ -56,16 +56,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        sp_lt: secondary_space_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <220>;
-            require-prior-idle-ms = <125>;
-            bindings = <&mo>, <&kp>;
-        };
-
         tap_dance_layer_1and2: tap_dance_layer_1and2 {
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
@@ -164,7 +154,7 @@
             &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P
             &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt2 LEFT_GUI SEMI
             &z_mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &mt LEFT_ALT PERIOD  &mt LEFT_SHIFT SLASH
-            &mt LEFT_SHIFT ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &sp_lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LCTRL TAB  &mt LGUI BACKSPACE  &mo TERTIARY_LAYER  &mt RALT ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &on_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
+            &mt LEFT_SHIFT ESC  &mo FUNCTION_LAYER  &lt SECONDARY_LAYER LANGUAGE_2  &lt SECONDARY_LAYER SPACE  &mo NUM_LAYER  &mt LCTRL TAB  &mt LGUI BACKSPACE  &mo TERTIARY_LAYER  &mt RALT ENTER  &lt TERTIARY_LAYER LANGUAGE_1  &on_lt 0 LA(GRAVE)  &mt RCTRL BACKSLASH
             &mkp LCLK  &kp RIGHT  &kp DOWN  &kp LEFT  &kp UP  &kp UP  &kp LEFT  &kp DOWN  &kp RIGHT  &none
             &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LCTRL  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &none
